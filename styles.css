@@ -48,6 +48,10 @@ table {
 
 /* Root Variables */
 :root {
-	
+
 }
 /* Global Styles */
+img {
+	max-width: 500px;
+	height: auto;
+}
