@@ -118,30 +118,36 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p></p>
+            <p>Have a question about prints, lessons, or processing? Send a message below and I'll get back to you as soon as possible.</p>
             <form action="#" method="post">
-                <label for="">Full Name: </label>
-                <input type="text" id="" name="" required>
+                <label for="fName">Full Name: </label>
+                <input type="text" id="fName" name="fName" required>
+                <span class="error" id="fNameError"></span>
 
-                <label for="">Email: </label>
-                <input type="email" id="" name="" required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
 
-                <label for="">Phone Number: </label>
-                <input type="tel" id="" name="" required>
+                <label for="phone">Phone Number: </label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error" id="phoneError"></span>
 
-                <label for="">Message</label>
-                <textarea name="" id=""></textarea>
+                <label for="message">Comments</label>
+                <textarea name="message" id="message" required></textarea>
+                <span class="error" id="commentsError"></span>
 
                 <fieldset>
                     <legend>Preferred Contact Method: </legend>
-                    <label for="">Email</label>
-                    <input type="radio" id="" name="" value="">
+                    <label for="radioEmail">Email</label>
+                    <input type="radio" id="radioEmail" name="contact" value="email" required>
 
-                    <label for="">Phone</label>
-                    <input type="radio" id="" name="" value="">
+                    <label for="radioPhone">Phone</label>
+                    <input type="radio" id="radioPhone" name="contact" value="phone">
                 </fieldset>
+                <span class="error" id="contactError"></span>
                 <button type="submit">Submit</button>
             </form>
+            <div id="formSuccess"></div>
         </section>
     </main>
     <footer>
