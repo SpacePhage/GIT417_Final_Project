@@ -48,10 +48,87 @@ table {
 
 /* Root Variables */
 :root {
-
+	--deep-black: #05070B;
+	--charcoal-blue: #2d4256;
+	--midnight-blue: #0f1118;
+	--soft-grey: #cccccc;
+	--cyan: #1fbdd2;
+	--marigold: #fcae1e;
+	--white: #ffffff;
 }
 /* Global Styles */
-img {
-	max-width: 500px;
-	height: auto;
+body {
+	background-color: var(--deep-black);
 }
+
+main {
+	background-color: var(--midnight-blue);
+}
+
+h1, h2, h3 {
+	color: var(--white);
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+	color: var(--soft-grey);
+}
+
+img {
+	max-width: 300px;
+}
+
+button {
+
+}
+
+/* skip-link */
+.skip-link {
+	background: var(--white);
+	color: var(--marigold);
+	position: absolute;
+	left: 50%;
+	font-weight: 600;
+	font-size: 1rem;
+	transform: translateY(-600%);
+	transition: transform 0.3s;
+
+}
+
+.skip-link:focus {
+	transform: translateY(0%);
+}
+
+/* Navigation */
+header {
+	/*background-color: var(--charcoal-blue);*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 1rem 2rem;
+}
+
+nav {
+
+}
+
+/* Main Sections */
+section {
+	background-color: var(--charcoal-blue);
+	width: 1000px;
+}
+
+/* Footer */
