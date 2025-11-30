@@ -62,11 +62,15 @@ table {
 	--cyan: #1fbdd2;
 	--marigold: #fcae1e;
 	--white: #ffffff;
+	--heading-font: 'Montserrat', sans-serif;
+	--body-font: 'Inter', sans-serif;
+	--accent-font: 'Orbitron', sans-serif;
 }
 /* Global Styles */
 body {
 	background-color: var(--deep-black);
-	
+	font-family: var(--body-font);
+	font-weight: 300;
 }
 
 main {
@@ -82,6 +86,8 @@ main {
 
 h1, h2, h3 {
 	color: var(--white);
+	font-family: var(--heading-font);
+	font-weight: 500;
 }
 
 h1 {
