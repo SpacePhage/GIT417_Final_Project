@@ -174,7 +174,7 @@ section {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 1rem 1rem;
+	padding: 1rem 2rem;
 	background-color: var(--charcoal-blue);
 	width: 1100px;
 	margin-top: 1rem;
@@ -182,22 +182,44 @@ section {
 }
 
 #home {
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	gap: 0.5rem;
-	text-align: left;
+	position: relative;
+	background-image: linear-gradient(#05070BB0, #05070B80),
+	url(images/telescopes-on-grass.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 6rem 2rem;
 }
 
 #home h2 {
-	font-size: 3rem;
+	font-size: 4rem;
 	text-align: center;
 	padding-bottom: 1rem;
+	max-width: 20ch;
+	margin-top: -5rem;
+	text-shadow: 5px 10px 11px var(--deep-black);
 }
 
 #home p {
-	max-width: 45ch;
+	max-width: 70ch;
 	line-height: 2.25rem;
+	padding-top: 3rem;
+	text-align: center;
+}
+
+#gallery {
+	display:grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5rem;
+}
+
+#gallery h2 {
+	font-size: 2.5rem;
+}
+
+#gallery h3 {
+	font-size: 1.5rem;;
 }
 
 /* Footer */
