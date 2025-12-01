@@ -290,8 +290,9 @@ figcaption {
 }
 
 .cards {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 #services h2{
