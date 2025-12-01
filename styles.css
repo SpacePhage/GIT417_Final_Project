@@ -293,17 +293,51 @@ figcaption {
 	display: grid;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0.5rem;
+	gap: 1rem;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cards:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.cards h3 {
+	text-align: center;
+	padding-bottom: 0.5rem;
+}
+
+.cards p {
+	max-width: 30ch;
+	line-height: 1.5rem;
 }
 
 #services h2{
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 #services article {
 	margin: 1rem 0.5rem;
+	background-color: var(--midnight-blue);
+	border-radius: 20px;
+	padding: 1rem 0.75rem;
 }
 
-#services p {
+#services h2 + p {
 	max-width: 105ch;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Contact Form */
+#contact  {
+
 }
 /* Footer */
