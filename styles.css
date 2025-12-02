@@ -116,17 +116,19 @@ img {
 
 header button {
 	border-radius: 20px;
-	font-size: 1rem;
+	font-size: 0.85rem;
 	font-weight: bold;
 	padding: 0.5rem 1rem;
 	background-color: var(--midnight-blue);
 	color: var(--white);
+	border: 2px solid var(--white);
 }
 
 header button:hover {
 	cursor: pointer;
 	background-color: var(--white);
 	color: var(--midnight-blue);
+	border: 2px solid var(--deep-black);
 }
 
 /* skip-link */
@@ -153,7 +155,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
-	padding: 1rem 2rem;
+	padding: 1rem 2.25rem;
 }
 
 .header-left {
