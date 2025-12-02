@@ -335,6 +335,47 @@ figcaption {
 	text-align: center;
 }
 
+#cost-calculator .product-display {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 0.25rem 2rem;
+	justify-items: center;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+#cost-calculator h2, #cost-calculator h3 {
+	text-align: center;
+}
+
+#cost-calculator label {
+	font-size: 90%;
+}
+
+.product-controls {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	justify-content: center;
+}
+
+#cost-calculator article {
+	width: 100%;
+	height: 350px;
+}
+
+#cost-calculator figcaption {
+	margin-bottom: 0.5rem;
+}
+
+.add-to-cart {
+	background-color: var(--marigold);
+	border-radius: 20px;
+	color: var(--white);
+	border: 1px solid var(--dark-grey);
+}
+
 #process h2 {
 	margin-bottom: 1.5rem;
 }
@@ -523,7 +564,7 @@ p.light, ul a.light, #contact label.light, #contact legend.light {
 	color: var(--deep-black);
 }
 
-#gallery figcaption.light, #costCalculator figcaption.light {
+#gallery figcaption.light,#cost-calculator figcaption.light{
 	background-color: var(--light-grey);
 	color: var(--deep-black);
 }
