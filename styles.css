@@ -531,3 +531,7 @@ p.light, ul a.light, #contact label.light, #contact legend.light {
 ul a.light:hover {
 	color: var(--marigold);
 }
+
+#home.light {
+	background-image: url(images/telescopes-on-grass.jpeg);
+}

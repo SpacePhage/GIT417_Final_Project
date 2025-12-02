@@ -30,6 +30,7 @@ function switchTheme(){
     form.classList.toggle("light");
     textarea.classList.toggle("light");
     legend.classList.toggle("light");
+
     
     sections.forEach(section => section.classList.toggle("light"));
     text.forEach(p => p.classList.toggle("light"));
@@ -44,12 +45,6 @@ function switchTheme(){
     figcaptions.forEach(figcaption => figcaption.classList.toggle("light"));
 }
 
-
-//Cost Calculator
-
-//Contact Form
-
-//Form validation 
 
 
 //Event Handlers
