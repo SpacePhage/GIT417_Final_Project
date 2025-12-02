@@ -329,6 +329,48 @@ figcaption {
 	text-align: center;
 }
 
+#process h2 {
+	margin-bottom: 1.5rem;
+}
+
+#process h3 {
+	text-align: center;
+	padding-bottom: 0.75rem;
+}
+
+#process ol{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	color: var(--soft-grey);
+	margin: 1rem;
+	padding: 1rem 2rem;
+	gap: 2rem;
+
+}
+
+#process ol p {
+	max-width: 55ch;
+	line-height: 1.75rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: center;
+}
+
+
+
+#process li {
+	background-color: var(--midnight-blue);
+	border-radius: 12px;
+	padding: 1.5rem;
+	box-shadow: 10px 15px 25px var(--deep-black);
+}
+
+#process h2 + p {
+	max-width: 95ch;
+	text-align: center;
+}
+
 
 
 
