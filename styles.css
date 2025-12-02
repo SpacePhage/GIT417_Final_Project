@@ -65,9 +65,10 @@ table {
 	--heading-font: 'Montserrat', sans-serif;
 	--body-font: 'Inter', sans-serif;
 	--accent-font: 'Orbitron', sans-serif;
-	--light-mode-bg: #f5f7fa;
-	--light-mode-cards:  ;
-	--light-mode-sections: #eef1f4;      
+	--light-grey: #e6e8eb;
+    --light-blue: #a3bedb;
+	--dark-grey: #333333;
+
 }
 /* Global Styles */
 body {
@@ -485,14 +486,48 @@ footer p {
 
 /* Light Mode Styling */
 
-body.light {
+body.light, #contact input.light, #contact textarea.light {
 	background-color: var(--white);
 }
 
 main.light {
-	background-color: var(--light-mode-bg);
+	background-color: var(--light-grey);
 }
 
 header.light {
-	background-color: var(--light-mode-sections);
+	background-color: var(--light-blue);
+}
+
+h1.light, h2.light, h3.light {
+	color: var(--dark-grey);
+}
+
+section.light {
+	background-color: var(--light-blue);
+}
+
+p.light, ul a.light, #contact label.light, #contact legend.light {
+	color: var(--deep-black);
+}
+
+#services article.light {
+	background-color: var(--light-grey);
+}
+
+#process li.light {
+	background-color: var(--light-grey);
+}
+
+#contact form.light {
+	background-color: var(--light-grey);
+	color: var(--deep-black);
+}
+
+#gallery figcaption.light {
+	background-color: var(--light-grey);
+	color: var(--deep-black);
+}
+
+ul a.light:hover {
+	color: var(--marigold);
 }
