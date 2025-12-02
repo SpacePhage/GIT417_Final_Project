@@ -523,7 +523,7 @@ p.light, ul a.light, #contact label.light, #contact legend.light {
 	color: var(--deep-black);
 }
 
-#gallery figcaption.light {
+#gallery figcaption.light, #costCalculator figcaption.light {
 	background-color: var(--light-grey);
 	color: var(--deep-black);
 }

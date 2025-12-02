@@ -1,4 +1,6 @@
 "use strict";
+
+// Grab the elements by their id's or element name
 const toggleBtn = document.getElementById("switchTheme");
 const body = document.querySelector("body");
 const main = document.querySelector("main");
@@ -24,6 +26,7 @@ function switchTheme(){
     } else {
         toggleBtn.innerHTML = "Light Mode";
     }
+    // Single elements did not require looping
     body.classList.toggle("light");
     main.classList.toggle("light");
     header.classList.toggle("light");
@@ -31,7 +34,7 @@ function switchTheme(){
     textarea.classList.toggle("light");
     legend.classList.toggle("light");
 
-    
+    // Loop throught each element and apply the toggle 
     sections.forEach(section => section.classList.toggle("light"));
     text.forEach(p => p.classList.toggle("light"));
     list.forEach(li => li.classList.toggle("light"));
