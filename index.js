@@ -1,19 +1,17 @@
 "use strict";
-
+const toggleBtn = document.getElementById("switchTheme");
+const body = document.querySelector("body");
+const main = document.querySelector("main");
+const header = document.querySelector("header");
 //switch from dark mode to light mode
 function switchTheme(){
-    let btn = document.getElementById("switchTheme");
-    const body = document.querySelector("body");
-    const main = document.querySelector("main");
-    const header = document.querySelector("header");
-
     if(btn.innerHTML === "Light Mode"){
-        btn.innerHTML = "Dark Mode";
+        toggleBtn.innerHTML = "Dark Mode";
         body.classList.toggle("light");
         main.classList.toggle("light");
         header.classList.toggle("light");
     } else {
-        btn.innerHTML = "Light Mode"
+        toggleBtn.innerHTML = "Light Mode"
         body.classList.toggle("light");
         main.classList.toggle("light");
         header.classList.toggle("light");
