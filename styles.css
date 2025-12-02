@@ -65,6 +65,9 @@ table {
 	--heading-font: 'Montserrat', sans-serif;
 	--body-font: 'Inter', sans-serif;
 	--accent-font: 'Orbitron', sans-serif;
+	--light-mode-bg: #f5f7fa;
+	--light-mode-cards:  ;
+	--light-mode-sections: #eef1f4;      
 }
 /* Global Styles */
 body {
@@ -73,13 +76,13 @@ body {
 	font-weight: 300;
 }
 
+
 main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
 	flex-direction: column;
-	
 	width: 1280px;
 	background-color: var(--midnight-blue);
 }
@@ -387,7 +390,6 @@ figcaption {
 	flex-direction: column;
 	gap: 1rem;
 	align-items: center;
-	background-color: ;
 	border-radius: 12px;
 	text-align: center;
 	padding-top: 0.5rem;
@@ -479,4 +481,18 @@ footer {
 footer p {
 	font-size: 0.65rem;
 	padding-left: 0.5rem;
+}
+
+/* Light Mode Styling */
+
+body.light {
+	background-color: var(--white);
+}
+
+main.light {
+	background-color: var(--light-mode-bg);
+}
+
+header.light {
+	background-color: var(--light-mode-sections);
 }
