@@ -8,8 +8,12 @@
 //Contact Form
 
 //Form validation 
+function checkForm(){
+
+}
+
 
 //Event Handlers
 
 // Form Validation Event Handler
-document.getElementById("costCalculator").addEventListener("")
+document.getElementById("cost-calculator").addEventListener("click", checkForm);

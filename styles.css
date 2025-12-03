@@ -118,6 +118,8 @@ img {
 	border-radius: 4px;
 }
 
+/* Button Styles for Light/Dark Toggling */
+
 header button {
 	border-radius: 20px;
 	font-size: 0.85rem;
@@ -227,9 +229,15 @@ section {
 #home p {
 	max-width: 70ch;
 	line-height: 2.25rem;
-	padding-top: 3rem;
+	margin-top: 2rem;
 	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1rem;
+	border-radius: 8px;
+	color: var(--white);
 }
+
+/* Gallery Section */
 
 #gallery {
 	display:grid;
@@ -295,6 +303,8 @@ figcaption {
 	cursor: pointer;
 }
 
+/* Services Section */
+
 .cards {
 	display: grid;
 	grid-template-rows: auto;
@@ -335,11 +345,13 @@ figcaption {
 	text-align: center;
 }
 
+/* Cost Calculator Section */
+
 #cost-calculator .product-display {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
-	gap: 0.25rem 2rem;
+	gap: 4rem 2rem;
 	justify-items: center;
 	margin-top: 1.5rem;
 	margin-bottom: 1rem;
@@ -351,6 +363,13 @@ figcaption {
 
 #cost-calculator h2 {
 	margin-bottom: 1rem;
+}
+
+#cost-calculator figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1rem;
 }
 
 #cost-calculator label {
@@ -380,6 +399,7 @@ figcaption {
 	border: 1px solid var(--dark-grey);
 }
 
+/* Process Section */
 #process h2 {
 	margin-bottom: 1.5rem;
 }
