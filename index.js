@@ -10,6 +10,7 @@ const errorPhone = document.getElementById("phoneError");
 const errorMessage = document.getElementById("commentsError");
 const successMessage = document.getElementById("formSuccess");
 
+//Form validation
 function checkForm(e) {
     //prevent default for submission
     e.preventDefault();
@@ -67,6 +68,39 @@ function createCustomer() {
 }
 
 
+
+//Cost Calculator
+function addToCart(event) {
+    //grab each cart item
+    let productNum1 = document.getElementById("qty-1");
+    let productNum2 = document.getElementById("qty-2");
+    let productNum3 = document.getElementById("qty-3");
+    let productNum4 = document.getElementById("qty-4");
+    //declare the span where the subtotal amount will be display
+    let cartSubtotal = document.getElementById("cart-subtotal");
+
+    //grab the data-id for each button
+    let productId = event.target.dataset.id;
+    //link each product to its respective button
+    let product = document.querySelector(`article[data-id='${productId}']`);
+    //grab the products name
+    const name = product.dataset.name;
+    //grab the products price
+    const price = parseFloat(product.data.price);
+    
+    let cartTotal = 0;
+    let cart = [];
+
+
+    
+}
+
+
+
 //event handler for checkForm
 document.getElementById("form").addEventListener("submit", checkForm);
 
+//event handler for cost calculator
+document.querySelectorAll(".add-to-cart").forEach(button => {
+    button.addEventListener("click", addToCart);
+});
