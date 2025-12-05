@@ -533,6 +533,23 @@ label {
 	margin: 0;
 }
 
+
+.error {
+	visibility: hidden;
+}
+
+.showError {
+	visibility: visible;
+	color: red;
+}
+
+#formSuccess {
+	max-width: 45ch;
+	font-size: 1.5rem;
+	color: var(--soft-grey);
+	text-align: center;
+}
+
 #contact input[type="radio"]:checked {
 	background: var(--cyan);
 	border-color: var(--charcoal-blue);
