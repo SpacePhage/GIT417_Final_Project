@@ -67,7 +67,11 @@ function createCustomer() {
     };
 }
 
+    //set cart total (no products added)
+    let cartTotal = 0;
 
+    //create an empty area to add cart items to
+    let cart = [];
 
 //Cost Calculator
 function addToCart(event) {
@@ -86,13 +90,13 @@ function addToCart(event) {
     //grab the products name
     const name = product.dataset.name;
     //grab the products price
-    const price = parseFloat(product.data.price);
-    
-    let cartTotal = 0;
-    let cart = [];
-
-
-    
+    const price = parseFloat(product.dataset.price);
+    //add product to the array
+    cart.push({name, price});
+    //add price for each product to the total
+    cartTotal += price
+    //display the subtotal in the html with 2 decimal places
+    cartSubtotal.textContent = cartTotal.toFixed(2);
 }
 
 
