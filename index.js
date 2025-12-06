@@ -75,11 +75,6 @@ function createCustomer() {
 
 //Cost Calculator
 function addToCart(event) {
-    //grab each cart item
-    let productNum1 = document.getElementById("qty-1");
-    let productNum2 = document.getElementById("qty-2");
-    let productNum3 = document.getElementById("qty-3");
-    let productNum4 = document.getElementById("qty-4");
     //declare the span where the subtotal amount will be display
     let cartSubtotal = document.getElementById("cart-subtotal");
 
@@ -91,12 +86,35 @@ function addToCart(event) {
     const name = product.dataset.name;
     //grab the products price
     const price = parseFloat(product.dataset.price);
+    //grab amount of product with same data id 
+    let amount = document.querySelector(`#qty-${productId}`);
+
+
+    //convert product quantity to integer
+    let quantity = parseInt(amount.value);
+
+    
+
+    //price times number of items per product
+    let itemTotal = price * quantity;
+
     //add product to the array
-    cart.push({name, price});
+    cart.push({
+        name: name,
+        price: price, 
+        quantity: quantity
+    });
     //add price for each product to the total
-    cartTotal += price
+    cartTotal += itemTotal;
     //display the subtotal in the html with 2 decimal places
     cartSubtotal.textContent = cartTotal.toFixed(2);
+}
+//remove hidden element from remove cart button
+
+
+//function to remove items from cart
+function removeFromCart(){
+
 }
 
 
@@ -106,5 +124,13 @@ document.getElementById("form").addEventListener("submit", checkForm);
 
 //event handler for cost calculator
 document.querySelectorAll(".add-to-cart").forEach(button => {
+    //add an event for each click of add to cart
     button.addEventListener("click", addToCart);
 });
+
+document.querySelectorAll(".remove-from-cart").forEach(button => {
+    //add an event for each click of add to cart
+    button.addEventListener("click", removeFromCart);
+});
+
+

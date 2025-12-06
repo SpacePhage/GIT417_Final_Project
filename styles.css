@@ -329,6 +329,12 @@ figcaption {
 	line-height: 1.5rem;
 }
 
+/* hide remove from cart button */
+.hide-button {
+	visibility: hidden;
+}
+
+
 #services h2{
 	margin-bottom: 1.5rem;
 }
